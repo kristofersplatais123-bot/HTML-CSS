@@ -178,7 +178,7 @@
 <header>
 
     <div class="logo">
-        <img src="img/logo.png" height="40">
+        <img src="[img/logo.png](https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg)" height="40">
     </div>
 
     <div class="menu">
@@ -196,11 +196,10 @@
 <div class="hero">
 
     <div class="left">
-        <h1>Galvenais virsraksts</h1>
+        <h1>Pērc BMW</h1>
 
         <p>
-            Šeit ir apraksts par uzņēmumu.
-            Mēs piedāvājam dažādus risinājumus.
+           Ir jauni modeļi un krāsas. Ja ir kādas velmes piesakaties un pasūtitet.
         </p>
 
         <button class="btn1">Lasīt vairāk</button>
@@ -208,7 +207,7 @@
     </div>
 
     <div class="right">
-        Fona bilde
+        <img src="https://i.pinimg.com/1200x/7f/31/bf/7f31bf3288cc6a7e6012b600db867b31.jpg" height="40">
     </div>
 
 </div>
@@ -216,20 +215,20 @@
 <div class="news">
 
     <div class="card">
-        <div class="img">Bilde</div>
+       <img src="https://i.pinimg.com/736x/b9/84/06/b984064a0de68eaf5df3a1a20724c08f.jpg" height="40">
+        <h3>Bmw M3 e36</h3>
+        <a href="">Lasīt vairāk</a>
+    </div>
+
+    <div class="card">
+        <img src="" height="40">
         <h3>Ziņu virsraksts</h3>
         <a href="">Lasīt vairāk</a>
     </div>
 
     <div class="card">
-        <div class="img">Bilde</div>
-        <h3>Ziņu virsraksts</h3>
-        <a href="">Lasīt vairāk</a>
-    </div>
-
-    <div class="card">
-        <div class="img">Bilde</div>
-        <h3>Ziņu virsraksts</h3>
+       <img src="https://i.pinimg.com/1200x/ba/13/f2/ba13f21e2c007ac4cfe9dd3cf3e94d44.jpg" height="40">
+        <h3>BMW 740i</h3>
         <a href="">Lasīt vairāk</a>
     </div>
 
@@ -286,7 +285,7 @@
 
 <footer>
 
-    <img src="https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg" height="40">
+    <img src="[img/logo.png](https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg)" height="40">
 
     <br><br>
 
