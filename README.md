@@ -207,7 +207,7 @@
     </div>
 
     <div class="right">
-        <img src="https://i.pinimg.com/1200x/7f/31/bf/7f31bf3288cc6a7e6012b600db867b31.jpg" height="400">
+        <img src="https://i.pinimg.com/1200x/7f/31/bf/7f31bf3288cc6a7e6012b600db867b31.jpg" height="200">
     </div>
 
 </div>
@@ -215,19 +215,19 @@
 <div class="news">
 
     <div class="card">
-       <img src="https://i.pinimg.com/736x/b9/84/06/b984064a0de68eaf5df3a1a20724c08f.jpg" height="400">
+       <img src="https://i.pinimg.com/736x/b9/84/06/b984064a0de68eaf5df3a1a20724c08f.jpg" height="200">
         <h3>Bmw E36</h3>
         <a href="">Lasīt vairāk</a>
     </div>
 
     <div class="card">
-        <img src="https://i.pinimg.com/736x/42/f0/aa/42f0aa5410300853c7a2d4cb702bc553.jpg" height="400">
+        <img src="https://i.pinimg.com/736x/42/f0/aa/42f0aa5410300853c7a2d4cb702bc553.jpg" height="200">
         <h3>BMW M3</h3>
         <a href="">Lasīt vairāk</a>
     </div>
 
     <div class="card">
-       <img src="https://i.pinimg.com/1200x/ba/13/f2/ba13f21e2c007ac4cfe9dd3cf3e94d44.jpg" height="400">
+       <img src="https://i.pinimg.com/1200x/ba/13/f2/ba13f21e2c007ac4cfe9dd3cf3e94d44.jpg" height="200">
         <h3>BMW 740i</h3>
         <a href="">Lasīt vairāk</a>
     </div>
@@ -246,7 +246,7 @@
 <div class="slider">
 
     <div class="slidebox">
-       <img src="https://i.pinimg.com/736x/37/cd/aa/37cdaa51640ed391e2a64a73d259880c.jpg" height="400">
+       <img src="https://i.pinimg.com/736x/37/cd/aa/37cdaa51640ed391e2a64a73d259880c.jpg" height="200">
     </div>
 
     <p>● ○ ○</p>
@@ -255,27 +255,27 @@
 
 <div class="content">
 
-    <h2>Heading</h2>
+    <h2>Cenas</h2>
 
     <p>
-        Šeit var būt teksts par projektu vai uzņēmumu.
+        Liela dažādiba mašinu cenās
     </p>
 
     <ul>
         <li>Pirmais</li>
-        <li>Otrais</li>
-        <li>Trešais</li>
+        <li>BMW M3</li>
+        <li>BMW 740i</li>
     </ul>
 
     <div class="table">
 
-        <div>Value 1</div>
-        <div>Value 2</div>
-        <div>Value 3</div>
+        <div>Bmw E36-125k</div>
+        <div>BMW M3-200k</div>
+        <div>BMW 740i-250k</div>
 
-        <div>Value 4</div>
-        <div>Value 5</div>
-        <div>Value 6</div>
+        <div>custom-175k</div>
+        <div>Custom-250k</div>
+        <div>custom-300k</div>
 
     </div>
 
