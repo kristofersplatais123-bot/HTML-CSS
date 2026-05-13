@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
@@ -301,7 +300,7 @@ footer {
 
 <footer>
     <div class="footer-top">
-        <div>Logo</div>
+        <div><img src="img/logo.png" alt="Logo" style="height:40px;"></div>
 
         <div>
             <b>Kontakti</b><br>
