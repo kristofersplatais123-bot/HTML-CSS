@@ -1,325 +1,305 @@
-<html lang="lv">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Mājaslapa</title>
+    <title>Mana lapa</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    <style>
 
-body {
-    background: #fff;
-}
+        body{
+            margin:0;
+            font-family:Arial;
+        }
 
-/* ===== HEADER ===== */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    border-bottom: 1px solid #ddd;
-}
+        header{
+            width:100%;
+            height:80px;
+            border-bottom:1px solid gray;
+        }
 
-nav a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-}
+        .logo{
+            float:left;
+            margin-left:40px;
+            margin-top:20px;
+        }
 
-.search {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 1px solid #ccc;
-    padding: 3px 8px;
-    border-radius: 4px;
-}
+        .menu{
+            float:left;
+            margin-left:200px;
+            margin-top:30px;
+        }
 
-.search input {
-    border: none;
-    outline: none;
-}
+        .menu a{
+            text-decoration:none;
+            color:black;
+            margin-right:20px;
+        }
 
-/* ===== HERO ===== */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px;
-    border-bottom: 1px solid #ddd;
-}
+        .search{
+            float:right;
+            margin-right:40px;
+            margin-top:25px;
+        }
 
-.hero-text {
-    max-width: 50%;
-}
+        .hero{
+            width:100%;
+            height:400px;
+            border-bottom:1px solid gray;
+        }
 
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
-}
+        .left{
+            width:45%;
+            float:left;
+            margin-left:50px;
+            margin-top:80px;
+        }
 
-.hero p {
-    color: #444;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
+        .left h1{
+            font-size:40px;
+        }
 
-.btn {
-    padding: 10px 16px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 5px;
-}
+        .left p{
+            color:gray;
+        }
 
-.btn-yellow {
-    background: #f4b400;
-}
+        .btn1{
+            background:orange;
+            border:none;
+            padding:10px;
+            margin-top:20px;
+        }
 
-.btn-blue {
-    background: #cfe3ff;
-}
+        .btn2{
+            background:lightblue;
+            border:none;
+            padding:10px;
+        }
 
-/* fona bilde */
-.hero-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999;
-    font-size: 14px;
-}
+        .right{
+            width:40%;
+            height:250px;
+            border:1px solid gray;
+            float:right;
+            margin-right:50px;
+            margin-top:70px;
+            text-align:center;
+            line-height:250px;
+            color:gray;
+        }
 
-/* ===== NEWS ===== */
-.news {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 60px;
-    gap: 20px;
-    border-bottom: 1px solid #ddd;
-}
+        .news{
+            width:100%;
+            height:350px;
+            margin-top:30px;
+        }
 
-.card {
-    width: 33%;
-}
+        .card{
+            width:30%;
+            float:left;
+            margin-left:25px;
+        }
 
-.card-img {
-    height: 120px;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
+        .img{
+            width:100%;
+            height:120px;
+            border:1px solid gray;
+            text-align:center;
+            line-height:120px;
+            color:gray;
+        }
 
-.card h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
+        .card h3{
+            font-size:20px;
+        }
 
-.card a {
-    font-size: 14px;
-    color: #000;
-}
+        .card a{
+            color:black;
+        }
 
-/* ===== AD ===== */
-.ad {
-    background: #cfe8cf;
-    text-align: center;
-    padding: 60px;
-}
+        .ad{
+            width:100%;
+            height:200px;
+            background:#dff0d8;
+            text-align:center;
+            padding-top:60px;
+        }
 
-.ad h2 {
-    margin-bottom: 20px;
-}
+        .ad button{
+            padding:10px;
+            margin:10px;
+        }
 
-.ad button {
-    padding: 10px 20px;
-    border: 1px solid #aaa;
-    margin: 0 10px;
-    cursor: pointer;
-}
+        .slider{
+            width:100%;
+            height:350px;
+            text-align:center;
+            border-top:1px solid gray;
+            border-bottom:1px solid gray;
+        }
 
-/* ===== SLIDER ===== */
-.slider {
-    padding: 60px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
+        .slidebox{
+            width:80%;
+            height:200px;
+            border:1px solid gray;
+            margin:auto;
+            margin-top:20px;
+            line-height:200px;
+            color:gray;
+        }
 
-.slider-box {
-    height: 200px;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-}
+        .content{
+            padding:50px;
+        }
 
-.dots {
-    font-size: 18px;
-}
+        .table{
+            width:100%;
+        }
 
-/* ===== CONTENT ===== */
-.content {
-    padding: 60px;
-}
+        .table div{
+            width:30%;
+            border:1px solid gray;
+            float:left;
+            padding:10px;
+            margin:5px;
+        }
 
-.content h2 {
-    margin-bottom: 15px;
-}
+        footer{
+            width:100%;
+            background:#ffe0b3;
+            padding:30px;
+            margin-top:100px;
+        }
 
-.content p {
-    margin-bottom: 15px;
-    color: #444;
-    line-height: 1.5;
-}
-
-.content ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.table {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background: #ffe8c2;
-    padding: 30px 60px;
-}
-
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.footer-bottom {
-    text-align: center;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    font-size: 14px;
-}
-</style>
+    </style>
 
 </head>
 
 <body>
 
 <header>
-    <div><b>LOGO</b></div>
 
-    <nav>
-        <a href="#">Sākums</a>
-        <a href="#">Par mums</a>
-        <a href="#">Kontakti</a>
-    </nav>
+    <div class="logo">
+        <img src="img/logo.png" height="40">
+    </div>
+
+    <div class="menu">
+        <a href="">Sākums</a>
+        <a href="">Par mums</a>
+        <a href="">Kontakti</a>
+    </div>
 
     <div class="search">
-        🔍 <input type="text" placeholder="Meklēt">
+        <input type="text" placeholder="Meklēt">
     </div>
+
 </header>
 
-<section class="hero">
-    <div class="hero-text">
+<div class="hero">
+
+    <div class="left">
         <h1>Galvenais virsraksts</h1>
+
         <p>
-            Šeit ir vieta aprakstam par uzņēmumu vai projektu.
-            Mēs piedāvājam kvalitatīvus risinājumus.
+            Šeit ir apraksts par uzņēmumu.
+            Mēs piedāvājam dažādus risinājumus.
         </p>
-        <button class="btn btn-yellow">Lasīt vairāk</button>
-        <button class="btn btn-blue">Pieteikties</button>
+
+        <button class="btn1">Lasīt vairāk</button>
+        <button class="btn2">Pieteikties</button>
     </div>
 
-    <div class="hero-image">
-        Fona bilde pa visu platumu
+    <div class="right">
+        Fona bilde
     </div>
-</section>
 
-<section class="news">
-    <div class="card">
-        <div class="card-img">Ziņas bilde</div>
-        <h3>Kaut kāds virsraksts</h3>
-        <a href="#">Lasīt vairāk</a>
-    </div>
+</div>
+
+<div class="news">
 
     <div class="card">
-        <div class="card-img">Ziņas bilde</div>
-        <h3>Kaut kāds virsraksts</h3>
-        <a href="#">Lasīt vairāk</a>
+        <div class="img">Bilde</div>
+        <h3>Ziņu virsraksts</h3>
+        <a href="">Lasīt vairāk</a>
     </div>
 
     <div class="card">
-        <div class="card-img">Ziņas bilde</div>
-        <h3>Kaut kāds virsraksts</h3>
-        <a href="#">Lasīt vairāk</a>
+        <div class="img">Bilde</div>
+        <h3>Ziņu virsraksts</h3>
+        <a href="">Lasīt vairāk</a>
     </div>
-</section>
 
-<section class="ad">
-    <h2>Reklāmas virsraksts</h2>
+    <div class="card">
+        <div class="img">Bilde</div>
+        <h3>Ziņu virsraksts</h3>
+        <a href="">Lasīt vairāk</a>
+    </div>
+
+</div>
+
+<div class="ad">
+
+    <h2>Reklāma</h2>
+
     <button>Pirkt</button>
     <button>Izmēģināt</button>
-</section>
 
-<section class="slider">
+</div>
+
+<div class="slider">
+
     <h2>Bilde pa visu</h2>
-    <div class="slider-box">Slīdrāde</div>
-    <div class="dots">● ○ ○</div>
-</section>
 
-<section class="content">
+    <div class="slidebox">
+        Slīdrāde
+    </div>
+
+    <p>● ○ ○</p>
+
+</div>
+
+<div class="content">
+
     <h2>Heading</h2>
 
-    <p>Šeit var ievietot aprakstu par piedāvājumu vai projektu.</p>
+    <p>
+        Šeit var būt teksts par projektu vai uzņēmumu.
+    </p>
 
     <ul>
-        <li>Pirmais punkts</li>
-        <li>Otrais punkts</li>
-        <li>Trešais punkts</li>
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
     </ul>
 
     <div class="table">
-        <div>Value 1</div><div>Value 2</div><div>Value 3</div>
-        <div>Value 4</div><div>Value 5</div><div>Value 6</div>
-        <div>Value 7</div><div>Value 8</div><div>Value 9</div>
+
+        <div>Value 1</div>
+        <div>Value 2</div>
+        <div>Value 3</div>
+
+        <div>Value 4</div>
+        <div>Value 5</div>
+        <div>Value 6</div>
+
     </div>
-</section>
+
+</div>
 
 <footer>
-    <div class="footer-top">
-        <div><img src="img/logo.png" alt="Logo" style="height:40px;"></div>
 
-        <div>
-            <b>Kontakti</b><br>
-            E-pasts: info@piemers.lv<br>
-            Tel: +371 20000000
-        </div>
+    <img src="img/logo.png" height="40">
 
-        <div>
-            <b>Izvēlne</b><br>
-            Sākums<br>
-            Par mums<br>
-            Kontakti
-        </div>
-    </div>
+    <br><br>
 
-    <div class="footer-bottom">
-        Autors: Jānis Seržants
-    </div>
+    Kontakti <br>
+    info@piemers.lv <br>
+    +37120000000
+
+    <br><br>
+
+    Autors: Jānis
+
 </footer>
 
 </body>
+
 </html>
