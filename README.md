@@ -13,7 +13,7 @@
         header{
             width:100%;
             height:80px;
-            border-bottom:1px solid gray;
+            border-bottom:1px gray;
         }
 
         .logo{
@@ -286,7 +286,7 @@
 
 <footer>
 
-    <img src="img/logo.png" height="40">
+    <img src="https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg" height="40">
 
     <br><br>
 
