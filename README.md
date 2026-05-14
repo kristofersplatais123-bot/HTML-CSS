@@ -1,6 +1,7 @@
-<html>
+<html lang="lv">
 
 <head>
+    <meta charset="UTF-8">
     <title>Mana lapa</title>
 
     <style>
@@ -13,7 +14,7 @@
         header{
             width:100%;
             height:80px;
-            border-bottom:1px gray;
+            border-bottom:1px solid gray;
         }
 
         .logo{
@@ -32,6 +33,10 @@
             text-decoration:none;
             color:black;
             margin-right:20px;
+        }
+
+        .menu a:hover{
+            color:orange;
         }
 
         .search{
@@ -66,12 +71,14 @@
             border:none;
             padding:10px;
             margin-top:20px;
+            cursor:pointer;
         }
 
         .btn2{
             background:lightblue;
             border:none;
             padding:10px;
+            cursor:pointer;
         }
 
         .right{
@@ -96,15 +103,11 @@
             width:30%;
             float:left;
             margin-left:25px;
+            transition:0.3s;
         }
 
-        .img{
-            width:100%;
-            height:120px;
-            border:1px solid gray;
-            text-align:center;
-            line-height:120px;
-            color:gray;
+        .card:hover{
+            transform:scale(1.05);
         }
 
         .card h3{
@@ -126,6 +129,7 @@
         .ad button{
             padding:10px;
             margin:10px;
+            cursor:pointer;
         }
 
         .slider{
@@ -144,6 +148,10 @@
             margin-top:20px;
             line-height:200px;
             color:gray;
+        }
+
+        .slidebox img{
+            margin-top:10px;
         }
 
         .content{
@@ -178,7 +186,7 @@
 <header>
 
     <div class="logo">
-        <img src="[img/logo.png](https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg)" height="40">
+        <img src="https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg" height="40">
     </div>
 
     <div class="menu">
@@ -188,7 +196,8 @@
     </div>
 
     <div class="search">
-        <input type="text" placeholder="Meklēt">
+        <input type="text" id="searchInput" placeholder="Meklēt">
+        <button onclick="meklet()">Meklēt</button>
     </div>
 
 </header>
@@ -196,14 +205,14 @@
 <div class="hero">
 
     <div class="left">
-        <h1>Pērc BMW</h1>
+        <h1 id="mainTitle">Pērc BMW</h1>
 
         <p>
-           Ir jauni modeļi un krāsas. Ja ir kādas velmes piesakaties un pasūtitet.
+           Ir jauni modeļi un krāsas. Ja ir kādas velmes piesakaties un pasūtiet.
         </p>
 
-        <button class="btn1">Lasīt vairāk</button>
-        <button class="btn2">Pieteikties</button>
+        <button class="btn1" onclick="showMessage()">Lasīt vairāk</button>
+        <button class="btn2" onclick="changeTitle()">Pieteikties</button>
     </div>
 
     <div class="right">
@@ -216,7 +225,7 @@
 
     <div class="card">
        <img src="https://i.pinimg.com/736x/b9/84/06/b984064a0de68eaf5df3a1a20724c08f.jpg" height="200">
-        <h3>Bmw E36</h3>
+        <h3>BMW E36</h3>
         <a href="">Lasīt vairāk</a>
     </div>
 
@@ -238,18 +247,23 @@
 
     <h2>Reklāma</h2>
 
-    <button>Pirkt</button>
-    <button>Izmēģināt</button>
+    <button onclick="buyNow()">Pirkt</button>
+    <button onclick="tryNow()">Izmēģināt</button>
 
 </div>
 
 <div class="slider">
 
     <div class="slidebox">
-       <img src="https://i.pinimg.com/736x/37/cd/aa/37cdaa51640ed391e2a64a73d259880c.jpg" height="200">
+       <img id="sliderImage"
+       src="https://i.pinimg.com/736x/37/cd/aa/37cdaa51640ed391e2a64a73d259880c.jpg"
+       height="200">
     </div>
 
-    <p>● ○ ○</p>
+    <br>
+
+    <button onclick="previousSlide()">◀</button>
+    <button onclick="nextSlide()">▶</button>
 
 </div>
 
@@ -258,7 +272,7 @@
     <h2>Cenas</h2>
 
     <p>
-        Liela dažādiba mašinu cenās
+        Liela dažādība mašīnu cenās
     </p>
 
     <ul>
@@ -269,13 +283,13 @@
 
     <div class="table">
 
-        <div>Bmw E36-125k</div>
-        <div>BMW M3-200k</div>
-        <div>BMW 740i-250k</div>
+        <div>BMW E36 - 125k</div>
+        <div>BMW M3 - 200k</div>
+        <div>BMW 740i - 250k</div>
 
-        <div>custom-175k</div>
-        <div>Custom-250k</div>
-        <div>custom-300k</div>
+        <div>Custom - 175k</div>
+        <div>Custom - 250k</div>
+        <div>Custom - 300k</div>
 
     </div>
 
@@ -283,12 +297,12 @@
 
 <footer>
 
-    <img src="[img/logo.png](https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg)" height="40">
+    <img src="https://i.pinimg.com/736x/ff/7c/b8/ff7cb81628e19fd9490d94396554f01a.jpg" height="40">
 
     <br><br>
 
     Kontakti <br>
-    bmwnotreal@gmial.com <br>
+    bmwnotreal@gmail.com <br>
     +37128195023
 
     <br><br>
@@ -296,6 +310,59 @@
     Autors: Kristofers Platais
 
 </footer>
+
+<script>
+
+    function showMessage(){
+        alert("BMW piedāvā jaunākos modeļus un īpašas cenas!");
+    }
+
+    function changeTitle(){
+        document.getElementById("mainTitle").innerHTML = "Paldies par pieteikšanos!";
+    }
+
+    function meklet(){
+        let value = document.getElementById("searchInput").value;
+        alert("Tu meklēji: " + value);
+    }
+
+    function buyNow(){
+        alert("Pirkums veiksmīgi sākts!");
+    }
+
+    function tryNow(){
+        alert("Testa brauciens rezervēts!");
+    }
+
+    let images = [
+        "https://i.pinimg.com/736x/37/cd/aa/37cdaa51640ed391e2a64a73d259880c.jpg",
+        "https://i.pinimg.com/736x/b9/84/06/b984064a0de68eaf5df3a1a20724c08f.jpg",
+        "https://i.pinimg.com/736x/42/f0/aa/42f0aa5410300853c7a2d4cb702bc553.jpg"
+    ];
+
+    let current = 0;
+
+    function nextSlide(){
+        current++;
+
+        if(current >= images.length){
+            current = 0;
+        }
+
+        document.getElementById("sliderImage").src = images[current];
+    }
+
+    function previousSlide(){
+        current--;
+
+        if(current < 0){
+            current = images.length - 1;
+        }
+
+        document.getElementById("sliderImage").src = images[current];
+    }
+
+</script>
 
 </body>
 
